@@ -56,6 +56,7 @@ header .container{
    min-height:96px;
    align-items:center;
    justify-content: space-between;
+   
 
 }
 .nav-icon{
@@ -73,11 +74,17 @@ header .container{
 header .container::after{
    content:"";
    position:absolute;
-   width:89.5%;
    background-color:rgb(162 162 162) ;
    height:1px;
    bottom:0;
+   left:50%;
+   transform: translateX(-50%);
    z-index: 10;
+   width:inherit;
+   -webkit-transform: translateX(-50%);
+   -moz-transform: translateX(-50%);
+   -ms-transform: translateX(-50%);
+   -o-transform: translateX(-50%);
 }
 .logo {
    z-index:1;
@@ -134,7 +141,7 @@ header .container nav ul li{
 }
 header .container nav ul li  a{
    color:rgb(255 255 253);
-   font-size:13px;
+   font-size:16px;
    padding-bottom:36.2px;
    z-index: 500;
    text-decoration: none;
@@ -419,21 +426,7 @@ header .container nav ul li :focus{
   /* end design  */
 
   /* start portfolio  */
-  .PORTFOLIO-list{
-   margin-bottom: 50px;
-  }
-   
-   .PORTFOLIO-list ul{
-   display: flex;
-   justify-content: center;
-  }
-   .PORTFOLIO-list ul li{
-      padding:8px;
-  }
-  .PORTFOLIO-list ul li:first-child{
-   background-color: #19c8fa;
-   color:white;
-  }
+  
 
   .Photography{
    display:grid;
@@ -580,7 +573,7 @@ header .container nav ul li :focus{
 
    /* start stars  */
    .stars{
-      background-image: url(/images/spider_man_14-wallpaper-1366x768.jpg);
+      background-image: url("../images/spider_man_14-wallpaper-1366x768.jpg");
       background-size: cover;
       height:60vh;
       position: relative;
@@ -869,7 +862,7 @@ margin-top:30px;
 
    /*  end TEST-SKILLS   */
    .quote{
-      background-image: url(/images/pexels-pixabay-259915.jpg);
+      background-image: url("../images/pexels-pixabay-259915.jpg");
       position: relative;
       height:300px;
       background-size:cover;
@@ -1158,7 +1151,7 @@ margin-top:30px;
 /* end contact  */
 /* start footer  */
 .footer{
-   background-image: url(/images/subscribe.jpg);
+   background-image: url("../images/subscribe.jpg");
    background-size: cover;
    height:400px;
    margin-top:35px;
